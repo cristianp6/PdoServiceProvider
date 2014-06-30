@@ -16,7 +16,7 @@ PdoServiceProvider
 [![Total Downloads](https://poser.pugx.org/csanquer/pdo-service-provider/downloads.svg)](https://packagist.org/packages/csanquer/pdo-service-provider)
 
 
-a Simple PDO service provider for Silex
+a Simple PDO service provider for Silex with dblib driver support
 
 Installation
 ------------
@@ -44,7 +44,7 @@ $app->register(
     new PdoServiceProvider('pdo'),
     array(
         'pdo.server'   => array(
-            // PDO driver to use among : mysql, pgsql , oracle, mssql, sqlite
+            // PDO driver to use among : mysql, pgsql , oracle, mssql, sqlite, dblib
             'driver'   => 'mysql',
             'host'     => 'mysql',
             'dbname'   => 'rfactori',
@@ -84,7 +84,7 @@ $app->register(
     array(
         // use previous custom prefix pdo.db1
         'pdo.db1.server' => array(
-            // PDO driver to use among : mysql, pgsql , oracle, mssql, sqlite
+            // PDO driver to use among : mysql, pgsql , oracle, mssql, sqlite, dblib
             'driver'   => 'mysql',
             'host'     => '127.0.0.1',
             'dbname'   => 'db1',
