@@ -16,7 +16,7 @@ PdoServiceProvider
 [![Total Downloads](https://poser.pugx.org/csanquer/pdo-service-provider/downloads.svg)](https://packagist.org/packages/csanquer/pdo-service-provider)
 
 
-a Simple PDO service provider for Silex with dblib driver support
+a Simple PDO service provider for Silex
 
 Installation
 ------------
