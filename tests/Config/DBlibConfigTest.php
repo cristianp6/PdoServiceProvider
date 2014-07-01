@@ -41,7 +41,7 @@ class DBlibConfigTest extends \PHPUnit_Framework_TestCase
                     'password' => 'fake-password',
                 ),
                 array(
-                    'dsn' => 'dblib:port=1433;dbname=fake-db;server=localhost',
+                    'dsn' => 'dblib:port=1433;dbname=fake-db;host=localhost',
                     'user' => 'fake-user',
                     'password' => 'fake-password',
                     'options' => array(),
@@ -58,7 +58,7 @@ class DBlibConfigTest extends \PHPUnit_Framework_TestCase
                     'attributes' => array(),
                 ),
                 array(
-                    'dsn' => 'dblib:dbname=fake-db;server=127.0.0.1',
+                    'dsn' => 'dblib:dbname=fake-db;host=127.0.0.1',
                     'user' => 'fake-user',
                     'password' => 'fake-password',
                     'options' => array(),
