@@ -2,7 +2,7 @@
 
 namespace CSanquer\Silex\PdoServiceProvider\Tests\Config;
 
-use CSanquer\Silex\PdoServiceProvider\Config\DBlibConfigTest;
+use CSanquer\Silex\PdoServiceProvider\Config\DBlibConfig;
 
 /**
  * TestCase for DBlibConfig
