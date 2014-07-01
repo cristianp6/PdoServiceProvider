@@ -10,7 +10,7 @@ use CSanquer\Silex\PdoServiceProvider\Config\DBlibConfigTest;
  * @author Cristian Pascottini <cristianp6@gmail.com>
  *
  */
-class SqlSrvConfigTest extends \PHPUnit_Framework_TestCase
+class DBlibConfigTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var DBlibConfig
