@@ -16,6 +16,7 @@ class DBlibConfig extends PdoConfig
         'port'      => 1433,
         'MultipleActiveResultSets' => null,
         'password'  => null,
+        'charset'   => null,
     );
 
     protected $allowedTypes = array(
@@ -24,6 +25,7 @@ class DBlibConfig extends PdoConfig
         'dbname'    => array('string'),
         'user'      => array('string'),
         'password'  => array('string', 'null'),
+        'charset'   => array('string', 'null'),
         'MultipleActiveResultSets' => array('boolean', 'null'),
     );
 
