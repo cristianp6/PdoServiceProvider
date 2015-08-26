@@ -1,5 +1,5 @@
 {
-    "name": "csanquer/pdo-service-provider",
+    "name": "cristianp6/pdo-service-provider",
     "description": "A PDO database service provider for Silex with the ability to nest transactions",
     "keywords": [
         "silex", "database", "pdo", "service provider", "transactions"
@@ -15,6 +15,18 @@
             "email": "cristianp6@gmail.com"
         }
     ],
+    "repositories": [{
+        "type": "package",
+        "package": {
+            "name": "cristianp6/pdo-service-provider",
+            "version": "0.8.0",
+            "source": {
+                "url": "https://github.com/cristianp6/PdoServiceProvider.git",
+                "type": "git",
+                "reference": "0.8.0"
+            }
+        }
+    }],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
@@ -36,7 +48,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.7.x-dev"
+            "dev-master": "0.8.x-dev"
         }
     }
 }
