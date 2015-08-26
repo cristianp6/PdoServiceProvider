@@ -118,3 +118,28 @@ $app->register(
 $db1Pdo = $app['pdo.db1'];
 $db2Pdo = $app['pdo.db2'];
 ```
+
+Transaction Usage
+----
+
+* Basic example on how to use transactions
+```php
+
+$sth = $app['pdo']->prepare( $sql );
+try {
+    $success = $app['pdo']->transaction(function() use ($sth) {
+        return $sth->execute();
+    });
+    
+    if($success) { 
+        //committed 
+    } else {
+        //rollback
+    }
+    
+} catch(\PDOExecption $e) {
+    $app['pdo']->rollBack();
+    $result = $e->getMessage();
+}
+
+```

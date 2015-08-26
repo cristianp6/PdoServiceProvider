@@ -11,7 +11,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  *
  * @author Charles Sanquer <charles.sanquer@gmail.com>
  */
-abstract class PdoConfig implements PdoConfigInterface
+abstract class PdoConfig extends PdoTransaction implements PdoConfigInterface
 {
     /**
      *
@@ -175,7 +175,7 @@ abstract class PdoConfig implements PdoConfigInterface
     {
         $params = $this->prepareParameters($params);
 
-        $pdo = new \PDO(
+        $pdo = new PdoTransaction(
             $params['dsn'],
             isset($params['user']) ? (string) $params['user'] : null,
             isset($params['password']) ? (string) $params['password'] : null,
